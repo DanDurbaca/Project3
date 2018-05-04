@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
+    <style>
+        #test:target {
+            display: block;
+        }
+
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            grid-gap: 10px;
+        }
+
+        li {
+            background-color: rgb(187, 42, 50);
+            border-radius: 3px;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+
+    </style>
 </head>
+
 <body>
     dddd
     <a href="cc.html" target="dd">Click here</a>
-    <p> I have also change some things in this branch:</p>
+    <a href="#test">Show me</a>
+
+
+    <p id="test"> I have also change some things in this branch:</p>
     <iframe name="dd" src="dd.html">
         <p>Your browser does not support iframes.</p>
-      </iframe>
+    </iframe>
+    <ul>
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>D</li>
+            <li>E</li>
+            <li>F</li>
+          </ul>
 </body>
+
 </html>
