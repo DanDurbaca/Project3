@@ -14,20 +14,43 @@
         }
 
 
-        ul {
+        .gridLayout {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
             grid-gap: 10px;
         }
 
-        li {
+        .liGridLayout {
             background-color: rgb(187, 42, 50);
             border-radius: 3px;
             padding: 20px;
             font-size: 14px;
         }
 
+        .PlaceHolder>* {
+            position: absolute;
+            float: left;
+            margin: 10px;
+            padding: 20px;
+            background-color: aqua;
+            border: 1px solid black;
+            width: 50px;
+        }
 
+        .LangHidden {
+            transform: translateY(0);
+            z-index: -1;
+            transition: all 1s;
+        }
+
+        .PlaceHolder:hover .LangHidden {
+            transform: translateY(100%);
+        }
+
+        .PlaceHolder {
+            position: absolute;
+        }
+        
     </style>
 </head>
 
@@ -41,14 +64,26 @@
     <iframe name="dd" src="dd.html">
         <p>Your browser does not support iframes.</p>
     </iframe>
-    <ul>
-            <li>A</li>
-            <li>B</li>
-            <li>C</li>
-            <li>D</li>
-            <li>E</li>
-            <li>F</li>
-          </ul>
+    <ul class="gridLayout">
+        <li class="liGridLayout">A</li>
+        <li class="liGridLayout">B</li>
+        <li class="liGridLayout">C</li>
+        <li class="liGridLayout">D</li>
+        <li class="liGridLayout">E</li>
+        <li class="liGridLayout">F</li>
+    </ul>
+
+
+    <div class="PlaceHolder">
+        <div class="LangShown">
+            French
+        </div>
+        <div class="LangHidden">
+            English
+        </div>
+    </div>
+
+
 </body>
 
 </html>
