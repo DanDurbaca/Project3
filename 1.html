@@ -18,6 +18,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
             grid-gap: 10px;
+            align-items: center;
         }
 
         .liGridLayout {
@@ -25,21 +26,21 @@
             border-radius: 3px;
             padding: 20px;
             font-size: 14px;
+            position:relative;
         }
 
         .PlaceHolder>* {
             position: absolute;
-            float: left;
-            margin: 10px;
-            padding: 20px;
+
             background-color: aqua;
             border: 1px solid black;
             width: 50px;
+            padding:10px;
         }
 
         .LangHidden {
             transform: translateY(0);
-            z-index: -1;
+            z-index: 5;
             transition: all 1s;
         }
 
@@ -49,8 +50,13 @@
 
         .PlaceHolder {
             position: absolute;
+            display:inline;
+            top: 0%;
         }
-        
+
+        .LangShown {
+            z-index: 10;
+        }
     </style>
 </head>
 
@@ -67,21 +73,23 @@
     <ul class="gridLayout">
         <li class="liGridLayout">A</li>
         <li class="liGridLayout">B</li>
-        <li class="liGridLayout">C</li>
+        <li class="liGridLayout">
+            <div class="PlaceHolder">
+                <div class="LangShown">
+                    French
+                </div>
+                <div class="LangHidden">
+                    English
+                </div>
+            </div>
+        </li>
         <li class="liGridLayout">D</li>
         <li class="liGridLayout">E</li>
         <li class="liGridLayout">F</li>
     </ul>
 
 
-    <div class="PlaceHolder">
-        <div class="LangShown">
-            French
-        </div>
-        <div class="LangHidden">
-            English
-        </div>
-    </div>
+
 
 
 </body>
