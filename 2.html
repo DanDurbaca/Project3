@@ -5,37 +5,53 @@
 
     <title>Page Title</title>
     <style>
+        /*
+        First solution: FLEX - best way !
+        */
+
         .container {
             position: absolute;
-            display:flex;
+            display: flex;
             justify-content: center;
             align-items: center;
             width: 100%;
             height: 100%;
             background-color: aqua;
+            opacity: 0.5;
         }
 
         .myInsideDiv {
             background-color: rgb(214, 34, 43);
             width: 500px;
             height: 500px;
+            line-height: 500px;
+            text-align: center;
         }
+
+        /*
+        Second solution: using margin:auto and 0 0 0 0 for an absolutely positioned div  !
+        Not good because for multiple elements you stack them instead of putting them side by side centered !
+        */
 
         .my2ndContainer {
             position: absolute;
             width: 100%;
             height: 100%;
-            background-color: blanchedalmond
+            background-color: blanchedalmond;
+            opacity: 0.5;
         }
 
-        .valign {
-            position: relative;
+        .my2ndInsideDiv {
             background-color: lightblue;
-            width: 500px;
-            height: 500px;
-            transform: translateY(50%) translateX(50%);
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
         }
-        
     </style>
 
 </head>
@@ -43,7 +59,15 @@
 <body>
     <div class="container">
         <div class="myInsideDiv">test</div>
+        <div class="myInsideDiv">test</div>
+
     </div>
+
+    <div class="my2ndContainer">
+        <div class="my2ndInsideDiv">test2</div>
+        <div class="my2ndInsideDiv">test2</div>
+    </div>
+
 </body>
 
 </html>
