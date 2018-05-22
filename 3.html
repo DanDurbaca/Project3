@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /*
+        Playing with vertical-align
+        a dummy span is entered
+        Normally the line-height should be changed to vertically the text !
+        */
+
+        #container {
+            text-align: center;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        .outer {
+            width: 100px;
+            height: 200px;
+            padding: 0;
+            border: 1px solid #000;
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        span {
+            height: 100%;
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        .inner {
+            background: red;
+            width: 30px;
+            height: 20px;
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+
+        #dummy {
+            display: inline-block;
+            height: 50%;
+            vertical-align: sub;
+            /*border: 1px solid rgb(189, 14, 14);*/
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+        <span></span>
+
+        <div class="outer">
+            <div id="dummy"></div>
+            <div class="inner">
+            </div>
+            <div class="inner">
+            </div>
+            <div class="inner">
+            </div>
+            <div class="inner">
+            </div>
+
+        </div>
+
+        <div class="outer">
+            <span></span>
+            <div class="inner">
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

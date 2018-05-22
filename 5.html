@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    
+
+    <title>5</title>
+    <style>
+        /*
+        https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/
+        */
+        /*
+        This is to show the creation of a navigation bar using flexbox 
+        Some animation is added using a two layered div transformation  ....
+        Note: the two divs (one stacking on top of the other) are inside a flexbox container !
+        */
+        .nav1 {
+            top:50%;
+            left:50%;
+            position: absolute;
+            transform: translateY(-50%);
+
+            display: inline-flex;
+            width: 49%;
+            height: 100px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            background-color: blue;
+        }
+
+        .content1 {
+            position: relative;
+            display: inline-block;
+            background-color: aquamarine;
+            width: 100px;
+            height: 100px;
+        }
+
+        .nav1>div:nth-child(3){
+            background-color: blue;
+            align-self: flex-end;
+        }
+
+        .PlaceHolder>* {
+            position: absolute;
+            background-color: aqua;
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .LangHidden {
+            transform: translateY(0);
+            z-index: 5;
+            transition: all 1s;
+        }
+
+        .PlaceHolder:hover .LangHidden {
+            transform: translateY(100%);
+        }
+
+        .PlaceHolder {
+            position: absolute;
+            display: inline;
+            top: 0%;
+        }
+
+        .LangShown {
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav1">
+        <div class="content1">
+        </div>
+        <div class="content1">
+        </div>
+        <div class="content1">
+            <div class="PlaceHolder">
+                <div class="LangShown">
+                    French
+                </div>
+                <div class="LangHidden">
+                    English
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
