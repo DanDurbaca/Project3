@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        .myContainer{
+            /*First center the container inside its parent !*/
+            position:absolute;
+            top:50%;
+            left:50%;
+            width:400px;
+            height: 400px;
+            background-color: blue;
+            /*The top left corner is centered until here */
+            /* Now move the div back 50% on horizontal and vertical axes*/
+            transform:translateY(-50%) translateX(-50%);/*Move on X and Y - 50%*/
+
+            /*Second - center the contents of this div using flex:*/
+            display: flex;
+            /*flex-wrap: wrap;*//*CHECK THIS OUT - wrapping or NO of a flexbox container !*/
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+    
+    <title>Center things</title>
+    
+</head>
+<body>
+    <div class = "myContainer">
+        <img src="index.jpg"/>
+        <img src="index.jpg"/>
+    </div>
+    
+</body>
+</html>
