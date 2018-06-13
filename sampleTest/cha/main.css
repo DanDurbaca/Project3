@@ -1,0 +1,164 @@
+   /*
+        https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/
+        https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties/
+        https://www.w3schools.com/howto/howto_css_fixed_menu.asp
+        */
+
+        /*
+        This is to show the creation of a navigation bar using flexbox 
+        Some animation is added using a two layered div transformation  ....
+        Note: the two divs (one stacking on top of the other) are inside a flexbox that sits inside a flexbox container !
+        */
+
+        .nav1 {
+            top: 0;
+            margin-left: 10px;
+            /* Give it some space around*/
+            border: 1px solid black;
+
+
+            position: fixed;
+            /*stay on page !*/
+            display: flex;
+            /*define the flex container*/
+            width: 98%;
+            /*100% - less the space*/
+            /*height: 100px;/* height of bar*/
+            flex-direction: row;
+            /*default - on row */
+            align-items: center;
+            /*center items inside the bar vertically*/
+            background: linear-gradient(to bottom right, rgba(42, 143, 226, 1), rgba(149, 212, 223, 0.979));
+        }
+
+        .nav1>div {
+            display: inline-block;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .content1 {
+            border-radius: 10px;
+            border: solid 1px rgb(5, 108, 116);
+        }
+
+        .content1 a {
+            text-decoration: none;
+            color: rgb(244, 248, 222);
+        }
+
+        .content1:hover {
+            animation: shake 1s cubic-bezier(.36, .07, .19, .97) both;
+            transform: translate3d(0, 0, 0);
+            backface-visibility: hidden;
+            perspective: 1000px;
+            border: solid 1px black;
+            background-color: rgba(42, 143, 226, 1);
+        }
+
+        .active {
+            border: solid 1px black;
+            background-color: rgba(42, 143, 226, 1);
+        }
+
+        @keyframes shake {
+            10%,
+            90% {
+                transform: translate3d(-1px, 0, 0);
+            }
+
+            20%,
+            80% {
+                transform: translate3d(2px, 0, 0);
+            }
+
+            30%,
+            50%,
+            70% {
+                transform: translate3d(-4px, 0, 0);
+            }
+
+            40%,
+            60% {
+                transform: translate3d(4px, 0, 0);
+            }
+        }
+
+        .nav1>div:nth-child(5) {
+            /*select the 5th element - starting this one go on the right side !*/
+            margin-left: auto;
+            /* !!!!! override the flex arrangement !*/
+            border: none;
+        }
+
+        .PlaceHolder {
+            width: 60px;
+            height: 30px;
+        }
+
+
+        .PlaceHolder>* {
+            /*all language placeholders*/
+            position: absolute;
+            /*get absolute positioning*/
+            width: 60px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 10px;
+        }
+
+        .PlaceHolder img {
+            width: 60px;
+            height: 30px;
+            border-radius: 10px;
+        }
+
+        .LangHidden {
+            transform: translateY(0);
+            z-index: 5;
+            /*bigger that 0 = default BUT lower then 10 - the shown layer */
+            transition: all 1s;
+        }
+
+        .PlaceHolder:hover .LangHidden {
+            transform: translateY(100%);
+        }
+
+        .LangShown {
+            z-index: 10;
+        }
+
+        /* Non navigation related */
+
+        .myTitle {
+            padding: 16px;
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 10px;
+            align-items: center;
+            border:solid 2px red;
+            background: linear-gradient(to bottom right, rgb(204, 222, 236), rgba(219, 226, 124, 0.979));
+        }
+
+        .verticalContainer{
+            display:flex;
+            flex-direction: column;
+            border:solid 2px blue;
+            margin:10px;
+            padding:10px;
+        }
+        .container>p{
+            padding:20px;
+            line-height: 100%;
+            vertical-align: middle;
+        }
+        .verticalContainer>p:nth-child(4) span{
+           color:pink;
+        }
