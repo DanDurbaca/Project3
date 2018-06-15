@@ -1,0 +1,8 @@
+.verticalContainer img{
+width:100px;
+height: auto;
+}
+.verticalContainer{
+    flex-direction: row;
+    align-items: center;
+}
