@@ -6,3 +6,8 @@ height: auto;
     flex-direction: row;
     align-items: center;
 }
+.verticalContainer>h4{
+    text-align: justify;
+    margin: 25px;
+    text-decoration: none;
+}
