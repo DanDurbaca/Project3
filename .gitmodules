@@ -19,3 +19,11 @@
 	path = Final result/Mohsen
 	url = https://github.com/SkyEbr3/School-Project-Real-Estate-Company.git
 	branch = MOHSEN
+[submodule "Final result/Rafi"]
+	path = Final result/Rafi
+	url = https://github.com/SkyEbr3/School-Project-Real-Estate-Company.git
+	branch = Rafi-wakily
+[submodule "Final result/Sheer"]
+	path = Final result/Sheer
+	url = https://github.com/SkyEbr3/School-Project-Real-Estate-Company.git
+	branch = Sheer
