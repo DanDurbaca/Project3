@@ -1,4 +1,4 @@
-[submodule "Final result/.\\Goldshajan"]
-	path = Final result/.\\Goldshajan
+[submodule "Final result/Goldshajan"]
+	path = Final result/Goldshajan
 	url = https://github.com/Goldshajan/School-project-ShoeCompany.git
 	branch = goldshajan
