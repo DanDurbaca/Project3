@@ -7,3 +7,15 @@
 	path = Final result/Baseer
 	url = https://github.com/Roby1208/R.E.B-shop.git
 	branch = Baseer
+[submodule "Final result/Umais"]
+	path = Final result/Umais
+	url = https://github.com/Homura3/Schoolproject-Car-Company-Website.git
+	branch = shaum
+[submodule "Final result/Hassam"]
+	path = Final result/Hassam
+	url = https://github.com/ShaHa121/ShaHa-Electronic-Website-Project.git
+	branch = Hassam
+[submodule "Final result/Mohsen"]
+	path = Final result/Mohsen
+	url = https://github.com/SkyEbr3/School-Project-Real-Estate-Company.git
+	branch = MOHSEN
