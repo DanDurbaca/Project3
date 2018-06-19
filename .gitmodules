@@ -2,3 +2,8 @@
 	path = Final result/Goldshajan
 	url = https://github.com/Goldshajan/School-project-ShoeCompany.git
 	branch = goldshajan
+
+[submodule "Final result/Baseer"]
+	path = Final result/Baseer
+	url = https://github.com/Roby1208/R.E.B-shop.git
+	branch = Baseer
