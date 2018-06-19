@@ -1,0 +1,9 @@
+Some usefull commands for git submodules:
+
+Examples:
+
+
+git submodule add -b MOHSEN https://github.com/SkyEbr3/School-Project-Real-Estate-Company.git "./Final result/Mohsen"
+
+git submodule init
+git submodule update
