@@ -1,9 +1,35 @@
 Some usefull commands for git submodules:
 
-Examples:
+Adding repos:
+
+git submodule add -b master        https://github.com/dul11m/Busta-sneakers.git "./Final result/Abdallah"
+
+git submodule add -b master        https://github.com/Nour-alagha/MyShoesCompany.git "./Final result/Nour"
+
+git submodule add -b Hassam        https://github.com/ShaHa121/ShaHa-Electronic-Website-Project.git "./Final result/Hassam"
+
+git submodule add -b goldshajan    https://github.com/Goldshajan/School-project-ShoeCompany.git "./Final result/Goldshajan"
+
+git submodule add -b Baseer        https://github.com/Roby1208/R.E.B-shop.git "./Final result/Baseer" 
+git submodule add -b Ethans-Branch https://github.com/Roby1208/R.E.B-shop.git "./Final result/Ethan" 
+git submodule add -b master        https://github.com/Roby1208/R.E.B-shop.git "./Final result/Roby" 
+
+git submodule add -b MOHSEN        https://github.com/SkyEbr3/School-Project-Real-Estate-Company.git "./Final result/Mohsen"
+git submodule add -b Rafi-wakily   https://github.com/SkyEbr3/School-Project-Real-Estate-Company.git "./Final result/Rafi"
+git submodule add -b Sheer         https://github.com/SkyEbr3/School-Project-Real-Estate-Company.git "./Final result/Sheer"
+
+Stoltz here!
+git submodule add -b Mirwais       https://github.com/Homura3/Schoolproject-Car-Company-Website.git "./Final result/Mirwais"
+git submodule add -b Mollinger     https://github.com/Homura3/Schoolproject-Car-Company-Website.git "./Final result/Mollinger"
+git submodule add -b shaum         https://github.com/Homura3/Schoolproject-Car-Company-Website.git "./Final result/Umais"
 
 
-git submodule add -b MOHSEN https://github.com/SkyEbr3/School-Project-Real-Estate-Company.git "./Final result/Mohsen"
+
+
+
+
+
+
 
 git submodule init
 git submodule update
