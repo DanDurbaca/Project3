@@ -27,3 +27,5 @@ git submodule add -b shaum         https://github.com/Homura3/Schoolproject-Car-
 git submodule init
 git submodule update
 git submodule update --recursive --remote
+
+gource !
