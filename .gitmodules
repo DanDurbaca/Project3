@@ -27,3 +27,27 @@
 	path = Final result/Sheer
 	url = https://github.com/SkyEbr3/School-Project-Real-Estate-Company.git
 	branch = Sheer
+[submodule "Final result/Mirwais"]
+	path = Final result/Mirwais
+	url = https://github.com/Homura3/Schoolproject-Car-Company-Website.git
+	branch = Mirwais
+[submodule "Final result/Nour"]
+	path = Final result/Nour
+	url = https://github.com/Nour-alagha/MyShoesCompany.git
+	branch = master
+[submodule "Final result/Abdallah"]
+	path = Final result/Abdallah
+	url = https://github.com/dul11m/Busta-sneakers.git
+	branch = master
+[submodule "Final result/Mollinger"]
+	path = Final result/Mollinger
+	url = https://github.com/Homura3/Schoolproject-Car-Company-Website.git
+	branch = Mollinger
+[submodule "Final result/Ethan"]
+	path = Final result/Ethan
+	url = https://github.com/Roby1208/R.E.B-shop.git
+	branch = Ethans-Branch
+[submodule "Final result/Roby"]
+	path = Final result/Roby
+	url = https://github.com/Roby1208/R.E.B-shop.git
+	branch = master
