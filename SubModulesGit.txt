@@ -24,12 +24,5 @@ git submodule add -b Mollinger     https://github.com/Homura3/Schoolproject-Car-
 git submodule add -b shaum         https://github.com/Homura3/Schoolproject-Car-Company-Website.git "./Final result/Umais"
 
 
-
-
-
-
-
-
-
 git submodule init
 git submodule update
