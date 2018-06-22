@@ -51,3 +51,7 @@
 	path = Final result/Roby
 	url = https://github.com/Roby1208/R.E.B-shop.git
 	branch = master
+[submodule "Final result/Stoltz"]
+	path = Final result/Stoltz
+	url = https://github.com/Homura3/Schoolproject-Car-Company-Website.git
+	branch = chris
