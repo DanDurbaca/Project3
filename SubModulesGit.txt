@@ -22,7 +22,7 @@ Stoltz here!
 git submodule add -b Mirwais       https://github.com/Homura3/Schoolproject-Car-Company-Website.git "./Final result/Mirwais"
 git submodule add -b Mollinger     https://github.com/Homura3/Schoolproject-Car-Company-Website.git "./Final result/Mollinger"
 git submodule add -b shaum         https://github.com/Homura3/Schoolproject-Car-Company-Website.git "./Final result/Umais"
-
+git submodule add -b chris         https://github.com/Homura3/Schoolproject-Car-Company-Website.git "./Final result/Stoltz"
 
 git submodule init
 git submodule update
