@@ -18,7 +18,7 @@ git submodule add -b MOHSEN        https://github.com/SkyEbr3/School-Project-Rea
 git submodule add -b Rafi-wakily   https://github.com/SkyEbr3/School-Project-Real-Estate-Company.git "./Final result/Rafi"
 git submodule add -b Sheer         https://github.com/SkyEbr3/School-Project-Real-Estate-Company.git "./Final result/Sheer"
 
-Stoltz here!
+git submodule add -b chris         https://github.com/Homura3/Schoolproject-Car-Company-Website.git "./Final result/Stoltz"
 git submodule add -b Mirwais       https://github.com/Homura3/Schoolproject-Car-Company-Website.git "./Final result/Mirwais"
 git submodule add -b Mollinger     https://github.com/Homura3/Schoolproject-Car-Company-Website.git "./Final result/Mollinger"
 git submodule add -b shaum         https://github.com/Homura3/Schoolproject-Car-Company-Website.git "./Final result/Umais"
